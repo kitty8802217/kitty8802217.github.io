@@ -1,0 +1,172 @@
+html,
+body {
+	font-family: Microsoft JhengHei;
+	height: 100%;
+	background-color: #f2e862;
+	color: #fff;
+}
+
+.navbar{	background-color: #f29b5e;
+}
+
+.header1{
+ height:auto;
+height: 100px;
+ background-color: #f29b5e;   
+}
+
+h3{color: brown;}
+h1{color: brown;}
+h5 {color: brown;}
+
+.text-center{color: brown;}
+.collapse{width: auto;
+height: auto;}
+
+a,
+a:focus,
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+.img_logo{
+	height: 100px;
+}
+
+.carousel .carousel-item {
+  height:auto;
+}
+
+.carousel .carousel-item img {
+  min-height: 100vmin;
+  max-height: 100vmax;
+  object-fit: cover;
+}
+
+
+<!--頁底-->
+
+.main .header{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  background: blue;
+}
+.main .content{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  background: #f40;
+}
+
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+.img-responsive{width: 100%;
+    height: 150px;}
+
+.container{text-align: center;}
+.about{text-align: center;}
+.row{text-align: center;}
+.about {
+width:100%; 　   /*整個頁面區塊的寬度*/
+margin:100%;   /*15px：上下邊緣距離 auto：左右隨畫面自動水平置中*/
+}
+
+
+
+<style type="text/css"> 
+/*固定頁頭 Start--------------*/
+#fixed-top {
+width: 100%;
+height: 40px; /* 視情況而定(本例依圖片高度而設定) */
+position: fixed;
+top: 0px;
+z-index: 2;
+}
+#fixed-top {
+width: 100%;
+height: 40px; /* 視情況而定(本例依圖片高度而設定) */
+position: absolute;
+bottom: 0px;
+}
+header {
+width: 100%;
+height: 40px; /* 視情況而定(本例依圖片高度而設定) */
+margin: 0 auto;
+position: relative;
+z-index: 1;
+    background-color:#f29b5e; 
+} 
+ 
+
+
+
+.video-container {
+
+position: relative;
+
+padding-bottom: 56.25%;
+
+padding-top: 30px;
+
+height: 0;
+
+overflow: hidden;
+
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+
+position: absolute;
+
+top: 0;left: 0;
+
+width: 100%;
+
+height: 100%;}
+
+
+
+.btn-prima{background-color:#f29b5e; }
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; /* 此為地圖長寬比 */
+  height: 0;
+  overflow: hidden;
+}
+@media (max-width: 599px) {
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%; /* 此為地圖長寬比 */
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+
