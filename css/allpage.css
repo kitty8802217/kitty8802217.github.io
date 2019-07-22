@@ -15,14 +15,7 @@ height: 100px;
  background-color: #f29b5e;   
 }
 
-footer {
-width: 100%;
-height: 40px; /* 視情況而定(本例依圖片高度而設定) */
-margin: 0 auto;
-position: relative;
-z-index: 1;
-    background-color:#f29b5e; 
-} 
+
 
 
 h3{color: brown;}
