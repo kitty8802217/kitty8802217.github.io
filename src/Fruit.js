@@ -1,4 +1,4 @@
-﻿
+
 (function(){
 
 var Fruit = game.Fruit = function(props)
