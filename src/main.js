@@ -83,7 +83,7 @@ var game = {
 	
 	Boy: null,
 	fruits: [],
-	maxfruits: 50,
+	maxfruits: 0,
 	receivefruit: null,
 	
 	time: {total:120, current:120},
@@ -228,7 +228,7 @@ game.StartUp = function(){
 		}
 		
 	}, true, true);
-	
+
 	//按键事件
 	em.register(document, ["keydown", "keyup"], function(e)
 	{
@@ -244,6 +244,23 @@ game.StartUp = function(){
 			else if(e.type == "keyup") me.Boy.stopMove();
 		}
 	}, false, false);
+
+    //qq = document.getElementById("runLeft");
+    //qq.addEventListener("touchend", function() {
+        //;me.Boy.leftmove(-1)
+    //});
+    document.getElementById("runLeft").addEventListener("touchstart", function() {
+        me.Boy.leftmove(-1)
+    });
+    document.getElementById("runLeft").addEventListener("touchend", function() {
+        me.Boy.stopMove();
+    });
+    document.getElementById("runRight").addEventListener("touchstart", function() {
+        me.Boy.rightmove(1);
+    });
+    document.getElementById("runRight").addEventListener("touchend", function() {
+        me.Boy.stopMove();
+    });
 	
 	//显示开始菜单
 	this.showMenu();
