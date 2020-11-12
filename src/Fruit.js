@@ -400,7 +400,7 @@ Fruit.init = function()
 		regY: 19,
 		width: 38,
 		height: 38,
-		score: 1,
+		score: 100,
 		scoreStep: 1,
 		maxScore: 4,
 		speedY: 1,
