@@ -72,18 +72,16 @@ Fruit.prototype.getCollide = function()
 	   i = 0;
 	}*/
 	if(this.type.tag == "oldfruit"){
-	this.currentScore =0;
-        //-Math.round(Math.random()*Math.abs(this.type.score));
+	this.currentScore = -Math.round(Math.random()*Math.abs(this.type.score));
 		if(this.currentScore > this.type.maxScore){
 			this.currentScore = this.type.maxScore;
 		}
 	this.currentScore = 0;
 	}else{
-		//this.currentScore = Math.round(Math.random()*this.type.maxScore);//取当前水果允许的最大值中的随机正整数座位当前分数
-        this.currentScore =5;
-	//	if(this.currentScore < this.type.score){
-			//this.currentScore = this.type.score;
-		//}
+		this.currentScore = Math.round(Math.random()*this.type.maxScore);//取当前水果允许的最大值中的随机正整数座位当前分数
+		if(this.currentScore < this.type.score){
+			this.currentScore = this.type.score;
+		}
 	}
 	if(this.type.tag == "redapple"){//红苹果 加一个生命值
 	    this.addLife = 1;
@@ -123,22 +121,22 @@ Fruit.init = function()
 			]
 	};
 	
-//	this.Type.fruit2 = 
-//	{
-//		image:game.getImage("fruit"),
-//		regX: 22,
-//		regY: 20,
-//		width: 45,
-//		height: 40,
-//		score: 1,
-//		scoreStep: 1,
-//		maxScore: 3,
-//		speedY: 1,
-//		tag:"custom",
-//		frames:[
-//			{rect:[39,0,45,40]}
-//			]
-//	};
+	this.Type.fruit2 = 
+	{
+		image:game.getImage("fruit"),
+		regX: 22,
+		regY: 20,
+		width: 45,
+		height: 40,
+		score: 1,
+		scoreStep: 1,
+		maxScore: 3,
+		speedY: 1,
+		tag:"custom",
+		frames:[
+			{rect:[39,0,45,40]}
+			]
+	};
 	
 	this.Type.fruit3 = 
 	{
@@ -402,7 +400,7 @@ Fruit.init = function()
 		regY: 19,
 		width: 38,
 		height: 38,
-		score: 100,
+		score: 1,
 		scoreStep: 1,
 		maxScore: 4,
 		speedY: 1,
@@ -926,7 +924,12 @@ Fruit.init = function()
 			{rect:[0,0,40,40]}
 			]
 	};
-	this.TypeList = [ this.Type.fruit3
+	this.TypeList = [this.Type.fruit1, this.Type.fruit2, this.Type.fruit3,this.Type.fruit4,this.Type.fruit5,this.Type.fruit6,
+	this.Type.fruit7,this.Type.fruit8,this.Type.fruit9,this.Type.fruit10,this.Type.fruit11,this.Type.fruit12,
+	this.Type.fruit13,this.Type.fruit14,this.Type.fruit15,this.Type.fruit16,this.Type.fruit17,this.Type.fruit18,
+	this.Type.fruit19,this.Type.fruit20,this.Type.fruit21,this.Type.fruit22,this.Type.fruit23,this.Type.fruit24,
+	this.Type.fruit25,this.Type.fruit26,this.Type.fruit27,this.Type.fruit28,this.Type.fruit29,
+	this.Type.fruit31,this.Type.fruit32,this.Type.fruit33,this.Type.fruit34,this.Type.fruit35,this.Type.fruit36
 					];
 };
 
